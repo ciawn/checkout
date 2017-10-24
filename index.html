@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Checkout</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <nav class="navbar navbar-default" style="height: 65px;">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">
+            <img src="https://camo.githubusercontent.com/1c7a5d19c2749509c3280b2aa3eb94644581b179/687474703a2f2f7777772e636961776e2e636f6d2e62722f696d616765732f6c6f676f2e706e67" width="80">
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function() {     
+        var navListItems = $('ul.setup-panel li a'),
+            allWells = $('.setup-content');
+
+        allWells.hide();
+
+        navListItems.click(function(e)
+        {
+            e.preventDefault();
+            var $target = $($(this).attr('href')),
+                $item = $(this).closest('li');
+            
+            if (!$item.hasClass('disabled')) {
+                navListItems.closest('li').removeClass('active');
+                $item.addClass('active');
+                allWells.hide();
+                $target.show();
+            }
+        });
+        
+        $('ul.setup-panel li.active a').trigger('click');
+      
+        // DEMO ONLY //
+        $('#activate-step-2').on('click', function(e) {
+            $('ul.setup-panel li:eq(1)').removeClass('disabled');
+            $('ul.setup-panel li a[href="#step-2"]').trigger('click');
+            $(this).remove();
+        })    
+      });
+    </script>
+  </body>
+</html>
