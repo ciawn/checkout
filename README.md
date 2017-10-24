@@ -17,7 +17,7 @@ Your code standards should match the ESLINT coding standards. We use an automate
 
 ## About this Project
 
-Checkout Hibrid in Vue.js Framework By CiaWN
+Checkout Hibrid in Vue.js Framework
 
 ## Build Setup
 
