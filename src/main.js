@@ -4,10 +4,16 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import Footer from './components/Footer'
+import ListItems from './components/ListItems'
+import ButtonsGoBack from './components/ButtonsGoBack'
+import Identify from './components/Identify'
 
 Vue.config.productionTip = false
 
 Vue.component('footer-component', Footer)
+Vue.component('list-items', ListItems)
+Vue.component('buttons-go-back', ButtonsGoBack)
+Vue.component('identify', Identify)
 
 /* eslint-disable no-new */
 new Vue({
