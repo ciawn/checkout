@@ -1,5 +1,7 @@
 <template>
   	<div>
+  		<header-component></header-component>
+
 		<div class="container">
 			<div class="row">
 		        <div class="col-xs-12">
@@ -51,9 +53,12 @@
 		    <div class="row setup-content" id="step-2">
 		    	<identify></identify>
 		    </div>
-		    <div class="row setup-content" id="step-3"></div>
-		    <div class="row setup-content" id="step-4"></div>
-
+		    <div class="row setup-content" id="step-3">
+		    	<payment></payment>
+		    </div>
+		    <div class="row setup-content" id="step-4">
+		    	
+		    </div>
 
 			<br>
 		</div>
