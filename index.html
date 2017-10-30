@@ -16,37 +16,39 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/card/1.3.2/js/card.min.js"></script>
 
     <script type="text/javascript">
-      $(document).ready(function() {     
-        var navListItems = $('ul.setup-panel li a'),
-            allWells = $('.setup-content');
+        $(document).ready(function() {     
+            var navListItems = $('ul.setup-panel li a'),
+                allWells = $('.setup-content');
 
-        allWells.hide();
+            allWells.hide();
 
-        navListItems.click(function(e)
-        {
-            e.preventDefault();
-            var $target = $($(this).attr('href')),
-                $item = $(this).closest('li');
-            
-            if (!$item.hasClass('disabled')) {
-                navListItems.closest('li').removeClass('active');
-                $item.addClass('active');
-                allWells.hide();
-                $target.show();
-            }
+            navListItems.click(function(e)
+            {
+                e.preventDefault();
+                var $target = $($(this).attr('href')),
+                    $item = $(this).closest('li');
+                
+                if (!$item.hasClass('disabled')) {
+                    navListItems.closest('li').removeClass('active');
+                    $item.addClass('active');
+                    allWells.hide();
+                    $target.show();
+                }
+            });
+
+            $('ul.setup-panel li.active a').trigger('click');
+
+            // DEMO ONLY //
+            $('#activate-step-2').on('click', function(e) {
+                $('ul.setup-panel li:eq(1)').removeClass('disabled');
+                $('ul.setup-panel li a[href="#step-2"]').trigger('click');
+                $(this).remove();
+            }); 
         });
-        
-        $('ul.setup-panel li.active a').trigger('click');
-      
-        // DEMO ONLY //
-        $('#activate-step-2').on('click', function(e) {
-            $('ul.setup-panel li:eq(1)').removeClass('disabled');
-            $('ul.setup-panel li a[href="#step-2"]').trigger('click');
-            $(this).remove();
-        })    
-      });
     </script>
   </body>
 </html>
