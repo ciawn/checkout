@@ -49,6 +49,8 @@
 				<buttons-go-back></buttons-go-back>
 		    	
 		    	<list-items></list-items>
+
+				<buttons-go-back></buttons-go-back>
 		    </div>
 		    <div class="row setup-content" id="step-2">
 		    	<identify></identify>

@@ -1,5 +1,5 @@
 <template>
-	<div class="items">
+	<div class="items" style="margin-left: 40px;">
     	<div class="row item-row">
 	        <div class="col-md-2">
 	        	<img src="https://cdn2.awsli.com.br/1000x1000/302/302664/produto/15584979/0c6bb2ab08.jpg" height="80"> 
