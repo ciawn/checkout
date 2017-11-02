@@ -19,7 +19,7 @@
 		                    <div class="form-group">
 		                        <div class="row">
 		                            <div class="col-sm-6 col-sm-offset-3">
-		                                <input type="submit" class="form-control btn btn-success" value="ENTRAR">
+		                                <input type="submit" class="btn btn-lg btn-success" value="ENTRAR">
 		                            </div>
 		                        </div>
 		                    </div>
@@ -94,7 +94,7 @@
 		                    <div class="form-group">
 		                        <div class="row">
 		                            <div class="col-sm-6 col-sm-offset-3">
-		                                <input type="submit" class="form-control btn btn-success" value="CADASTRAR	">
+		                                <input type="submit" class="btn btn-lg btn-success" value="CADASTRAR">
 		                            </div>
 		                        </div>
 		                    </div>
@@ -137,5 +137,11 @@ label {
     border-color: #1d671d;
     font-size: 18px;
     font-weight: 600;
+}
+.btn-lg {
+	border-radius: 0px;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 </style>

@@ -48,6 +48,10 @@
                 $('ul.setup-panel li a[href="#step-2"]').trigger('click');
                 $(this).remove();
             }); 
+
+            $('.funkyradio input[type="radio"]').change(function(){
+                console.log($(this).attr('checked'));
+            });
         });
     </script>
   </body>
