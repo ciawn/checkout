@@ -70,7 +70,7 @@
 				                	<strong> OPÇÕES DE ENTREGA</strong>
 				                </h4>
 							    <div class="funkyradio">
-							        <div class="funkyradio-primary">
+							        <div class="funkyradio-primary" onchange="selectShipping(1);">
 							            <input type="radio" name="radio" id="radio1" />
 							            <label for="radio1">
 							            	<strong>SEDEX</strong> | R$ 15,90 | 1 - 3 dias úteis
@@ -90,7 +90,7 @@
 
 						<form>
 						    <div class="funkyradio">
-						        <div class="funkyradio-primary">
+						        <div class="funkyradio-primary card">
 						            <input type="radio" name="card" id="card" />
 						            <label for="card">
 						            	<i class="fa fa-credit-card" aria-hidden="true"></i>
@@ -98,7 +98,7 @@
 						            </label>
 						        </div>
 
-						        <div class="funkyradio-primary">
+						        <div class="funkyradio-primary bolet">
 						            <input type="radio" name="bolet" id="bolet" />
 						            <label for="bolet">
 						            	<i class="fa fa-barcode" aria-hidden="true"></i>
@@ -108,7 +108,7 @@
 						    </div>
 						</form>
 
-						<div class="card" style="display:none;">
+						<div class="card-info" showing="0" style="display:none;">
 	                        <div class="col-xs-12 col-no-padding">
 	                            <label for="number">
 	                                Número Cartão

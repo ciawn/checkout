@@ -49,8 +49,20 @@
                 $(this).remove();
             }); 
 
-            $('.funkyradio input[type="radio"]').change(function(){
-                console.log($(this).attr('checked'));
+            $('.card').on('click', function(e) {
+                $('.bolet').removeAttr('checked');
+
+                if ($('.card-info').attr('showing') == "0") {
+                    $('.card-info').show();
+                    $('.card-info').attr('showing', 1);
+                }
+            });
+
+            $('.bolet').on('click', function(e) {
+                $('.card').removeAttr('checked');
+
+                $('.card-info').hide();
+                $('.card-info').attr('showing', 0);
             });
         });
     </script>

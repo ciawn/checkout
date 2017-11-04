@@ -42,13 +42,13 @@
 			                	<i class="fa fa-user-o" aria-hidden="true"></i><strong> NOVO CADASTRO</strong>
 			                </h4>
 			                <div class="form-group">
-		                        <div class="col-xs-6">
+		                        <div class="col-xs-6 col-no-padding-with-padding-left">
 		                            <label for="firstname">
 		                                Nome
 			                        </label>
 			                        <input type="text" name="firstname" class="form-control">
 		                        </div>
-		                        <div class="col-xs-6">
+		                        <div class="col-xs-6 col-no-padding-with-padding-left">
 		                            <label for="lastname">
 		                                Sobrenome
 			                        </label>
@@ -56,7 +56,7 @@
 		                        </div>
 		                    </div>
 		                    <div class="form-group">
-		                        <div class="col-xs-12">
+		                        <div class="col-xs-12 col-no-padding-with-padding-left">
 		                            <label for="lastname">
 		                                E-mail
 			                        </label>
@@ -64,13 +64,13 @@
 		                        </div>
 		                    </div>
 			                <div class="form-group">
-		                        <div class="col-xs-6">
+		                        <div class="col-xs-6 col-no-padding-with-padding-left">
 		                            <label for="document">
 		                                CPF
 			                        </label>
 			                        <input type="text" name="document" class="form-control">
 		                        </div>
-		                        <div class="col-xs-6">
+		                        <div class="col-xs-6 col-no-padding-with-padding-left">
 		                            <label for="lastname">
 		                                Data de Nascimento
 			                        </label>
@@ -78,13 +78,13 @@
 		                        </div>
 		                    </div>
 			                <div class="form-group">
-		                        <div class="col-xs-6">
+		                        <div class="col-xs-6 col-no-padding-with-padding-left">
 		                            <label for="password">
 		                                Senha
 			                        </label>
 			                        <input type="text" name="password" class="form-control">
 		                        </div>
-		                        <div class="col-xs-6">
+		                        <div class="col-xs-6 col-no-padding-with-padding-left">
 		                            <label for="confirm_password">
 		                                Confirmar Senha
 			                        </label>
@@ -108,7 +108,7 @@
 
 <script>
 export default {
-  name: 'ButtonsGoBack',
+  name: 'Identify',
   data () {
     return {}
   }
@@ -117,6 +117,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.col-no-padding-with-padding-left {
+	padding: 0px 5px 0px 0px;
+}
 .panel-body {
     text-align: left;
     border: solid 1px #ccc;
